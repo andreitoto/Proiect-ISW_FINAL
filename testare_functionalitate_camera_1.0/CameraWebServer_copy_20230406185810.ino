@@ -33,8 +33,8 @@ define CAMERA_MODEL_AI_THINKER // Has PSRAM
 // ===========================
 // Enter your WiFi credentials
 // ===========================
-const char* ssid = "test";
-const char* password = "1234";
+const char* ssid = "Wi_Fi (Sus) 2.4GHz"
+const char* password = "Andrei123Sus"
 
 void startCameraServer();
 void setupLedFlash(int pin);
