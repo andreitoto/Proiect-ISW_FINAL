@@ -28,8 +28,8 @@ while True:
       imgnp=np.array(bytearray(img_resp.read()),dtype=np.uint8) #convert image to bytearray 
       img = cv2.imdecode(imgnp,-1)  #convert image to bytearray 
 
-      plate_cascade = cv2.CascadeClassifier(harcascade) 
-     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) 
+      plate_cascade = cv2.CascadeClassifier(harcascade) #initialize cascade classifier
+     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) #process image in grayscale 
 
     plates = plate_cascade.detectMultiScale(img_gray, 1.1, 4) 
 
