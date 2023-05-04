@@ -24,12 +24,12 @@ url=’http://192.168.0.198/cam-hi.jpg’
 
 
 while True:
-      img_resp=urllib.request.urlopen(url)  #fetch image from ur
-      imgnp=np.array(bytearray(img_resp.read()),dtype=np.uint8) #convert image to bytearray 
-      img = cv2.imdecode(imgnp,-1)  #convert image to bytearray 
+    img_resp=urllib.request.urlopen(url)  #fetch image from ur
+    imgnp=np.array(bytearray(img_resp.read()),dtype=np.uint8) #convert image to bytearray 
+    img = cv2.imdecode(imgnp,-1)  #convert image to bytearray 
 
-      plate_cascade = cv2.CascadeClassifier(harcascade) #initialize cascade classifier
-     img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) #process image in grayscale 
+    plate_cascade = cv2.CascadeClassifier(harcascade) #initialize cascade classifier
+    img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) #process image in grayscale 
 
     plates = plate_cascade.detectMultiScale(img_gray, 1.1, 4)  #detect plates
 
@@ -41,7 +41,7 @@ while True:
            cv2.putText(img, "Number Plate", (x,y-5), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (355, 0, 355), 2) #draw box label 
 
            img_roi = img[y: y+h, x:x+w]
-            cv2.imshow("ROI", img_roi) #display image inside box
+           cv2.imshow("ROI", img_roi) #display image inside box
             
             if greyToggle is True: 
 cv2.imshow("Result", img_gray)
@@ -57,6 +57,6 @@ cv2.imshow("Result", img)
         cv2.putText(img, "Plate Saved", (150, 265), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2, (0, 0, 355), 2) #write Plate Saved on top of screenshot 
         cv2.imshow("Results",img) 
         cv2.waitKey(500)
-      count += 1 
+       count += 1 
      
 
