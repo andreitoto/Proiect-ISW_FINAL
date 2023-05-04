@@ -33,8 +33,8 @@
 // ===========================
 // Enter your WiFi credentials
 // ===========================
-const char* ssid = "Wi_Fi (Sus) 2.4GHz"
-const char* password = "Andrei123Sus"
+const char* ssid = "AndreoSus"           #retea acasa
+const char* password = "Andrei123Sus"    #parola router
 
 void startCameraServer();
 void setupLedFlash(int pin);
