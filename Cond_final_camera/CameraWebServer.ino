@@ -56,7 +56,7 @@ void handleJpgMid()
  
  
 void  setup(){
-  Serial.begin(115200);
+  Serial.begin(9200); # nu solicita atat de mult procesorul
   Serial.println();
   {
     using namespace esp32cam
