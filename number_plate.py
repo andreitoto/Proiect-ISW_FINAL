@@ -43,13 +43,10 @@ while True:
            img_roi = img[y: y+h, x:x+w]
            cv2.imshow("ROI", img_roi) #display image inside box
             
-            if greyToggle is True: 
-cv2.imshow("Result", img_gray)
-else: 
-cv2.imshow("Result", img) 
-
-
-
+if greyToggle is True:
+        cv2.imshow("Result", img_gray)
+    else:
+        cv2.imshow("Result", img)
 
     if cv2.waitKey(1) & 0xFF == ord('s'):
         cv2.imwrite("plates/scaned_img_" + str(count) + ".jpg", img_roi)  #write screenshot to disk 
