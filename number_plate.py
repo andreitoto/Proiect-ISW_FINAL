@@ -41,7 +41,7 @@ while True:
            cv2.putText(img, "Number Plate", (x,y-5), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (355, 0, 355), 2) #draw box label 
 
            img_roi = img[y: y+h, x:x+w]
-            cv2.imshow("ROI", img_roi) 
+            cv2.imshow("ROI", img_roi) #display image inside box
 
 
 
