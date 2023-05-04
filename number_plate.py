@@ -15,7 +15,7 @@ harcascade = "model\haarcascade_russian_plate_number.xml"
 
 cap = cv2.VideoCapture(0)
 
-cap.set(3, 440) 
+cap.set(3, 640) 
 cap.set(4, 780) 
 
 min_area = 500
