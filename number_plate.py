@@ -45,6 +45,8 @@ while True:
             
             if greyToggle is True: 
 cv2.imshow("Result", img_gray)
+else: 
+cv2.imshow("Result", img) 
 
 
 
