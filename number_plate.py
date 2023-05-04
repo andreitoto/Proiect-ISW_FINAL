@@ -31,7 +31,7 @@ while True:
       plate_cascade = cv2.CascadeClassifier(harcascade) #initialize cascade classifier
      img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) #process image in grayscale 
 
-    plates = plate_cascade.detectMultiScale(img_gray, 1.1, 4) 
+    plates = plate_cascade.detectMultiScale(img_gray, 1.1, 4)  #detect plates
 
     for (x,y,w,h) in plates:
         area = w * h
