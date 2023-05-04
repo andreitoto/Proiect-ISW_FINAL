@@ -42,6 +42,9 @@ while True:
 
            img_roi = img[y: y+h, x:x+w]
             cv2.imshow("ROI", img_roi) #display image inside box
+            
+            if greyToggle is True: 
+cv2.imshow("Result", img_gray)
 
 
 
