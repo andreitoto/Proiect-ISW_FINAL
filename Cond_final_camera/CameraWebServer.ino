@@ -2,17 +2,17 @@
 #include <WiFi.h>
 #include <esp32cam.h>
 
-
+// datee router personal 
 const char* WIFI_SSID = "AndreiSus"; 
 const char* WIFI_PASS = "Andrei12321T"; 
 
 WebServer server(80);
  
- 
+//rezolutie router
 static auto loRes = esp32cam::Resolution::find(320, 240);
 static auto midRes = esp32cam::Resolution::find(350,530);
 static auto hiRes = esp32cam::Resolution::find(800, 600);
-
+//server connection
 void serveJpg()
 {
   auto frame = esp32cam::capture();
@@ -75,7 +75,7 @@ void  setup(){
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
   }
-  Serial.print("http://");
+  Serial.print("http://");            //printare ip 
   Serial.println(WiFi.localIP());
   Serial.println("  /cam-lo.jpg");
   Serial.println("  /cam-hi.jpg");
