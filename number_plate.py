@@ -57,5 +57,6 @@ cv2.imshow("Result", img)
         cv2.putText(img, "Plate Saved", (150, 265), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2, (0, 0, 355), 2) #write Plate Saved on top of screenshot 
         cv2.imshow("Results",img) 
         cv2.waitKey(500)
+      count += 1 
      
 
