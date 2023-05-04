@@ -1,6 +1,4 @@
 import cv2
-import matplotlib
-matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import cvlib as cv
 import urllib.request
