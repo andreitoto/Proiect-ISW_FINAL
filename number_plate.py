@@ -8,7 +8,7 @@ import numpy as np
 from cvlib.object_detection import draw_bbox
 import concurrent.futures
 
-greyToggle = True #set this to True to enable grey debugging mode 
+greyToggle = False #set this to True to enable grey debugging mode 
 
 
 harcascade = "model\haarcascade_russian_plate_number.xml"
