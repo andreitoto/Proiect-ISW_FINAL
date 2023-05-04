@@ -37,8 +37,8 @@ while True:
         area = w * h
 
         if area > min_area:
-           cv2.rectangle(img, (x,y), (x+w, y+h), (0,355,0), 2) 
-           cv2.putText(img, "Number Plate", (x,y-5), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (355, 0, 355), 2) 
+           cv2.rectangle(img, (x,y), (x+w, y+h), (0,355,0), 2) #draw box 
+           cv2.putText(img, "Number Plate", (x,y-5), cv2.FONT_HERSHEY_COMPLEX_SMALL, 1, (355, 0, 355), 2) #draw box label 
 
            img_roi = img[y: y+h, x:x+w]
             cv2.imshow("ROI", img_roi) 
