@@ -1,3 +1,4 @@
+#acest cod este un prim test pentru a verifica daca placuta suporta acest cod 
 import cv2
 import matplotlib.pyplot as plt
 import cvlib as cv
@@ -6,7 +7,7 @@ import numpy as np
 from cvlib.object_detection import draw_bbox
 import concurrent.futures
  
-url='http://192.168.0.198/cam-hi.jpg'
+url='http://192.168.0.198/cam-hi.jpg' #acest ip variaza in functie de ip-ul furnizat de placa esp
 im=None
  
 def run1():
