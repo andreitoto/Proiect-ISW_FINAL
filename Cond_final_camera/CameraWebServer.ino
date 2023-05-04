@@ -64,7 +64,7 @@ void  setup(){
     cfg.setPins(pins::AiThinker);
     cfg.setResolution(hiRes);
     cfg.setBufferCount(2);
-    cfg.setJpeg(100)
+    cfg.setJpeg(80)
  
     bool ok = Camera.begin(cfg);
     Serial.println(ok ? "CAMERA OK" : "CAMERA FAIL");
