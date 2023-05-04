@@ -20,6 +20,7 @@ cap.set(4, 480)  #height
 
 min_area = 500
 count = 0
+url=’http://192.168.0.198/cam-hi.jpg’ 
 
 
 while True:
