@@ -6,6 +6,7 @@ import cvlib as cv
 import urllib.request
 import numpy as np
 from cvlib.object_detection import draw_box
+import concurent.futures
 
 
 
