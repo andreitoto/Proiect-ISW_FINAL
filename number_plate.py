@@ -24,9 +24,9 @@ url=’http://192.168.0.198/cam-hi.jpg’
 
 
 while True:
-      img_resp=urllib.request.urlopen(url) 
-      imgnp=np.array(bytearray(img_resp.read()),dtype=np.uint8) 
-      img = cv2.imdecode(imgnp,-1) 
+      img_resp=urllib.request.urlopen(url)  #fetch image from ur
+      imgnp=np.array(bytearray(img_resp.read()),dtype=np.uint8) #convert image to bytearray 
+      img = cv2.imdecode(imgnp,-1)  #convert image to bytearray 
 
       plate_cascade = cv2.CascadeClassifier(harcascade) 
      img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) 
