@@ -9,8 +9,8 @@ const char* WIFI_PASS = "Andrei12321T";
 WebServer server(80);
  
  
-static auto loRes = esp32cam::Resolution::find(250, 520);
-static auto midRes = esp32cam::Resolution::find(250,350);
+static auto loRes = esp32cam::Resolution::find(320, 240);
+static auto midRes = esp32cam::Resolution::find(350,530);
 void serveJpg()
 {
   auto frame = esp32cam::capture();
